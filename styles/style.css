@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --color-background: #000000;
+    --color-texto: #F6F6F6;
+    --color-titulo: #22D4FD;
+
+    --fuente-montserrat: "Montserrat",sans-serif ;
+    --fuente-krona-one: "krona-one",sans-serif;
+
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.header {
+    padding: 2% 0% 0% 15%;
+
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+
+}
+
+.header__menu_link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-titulo);
+    text-decoration-line: none;
+}
+
+body{
+    background-color: var(--color-background);
+    color: var(--color-texto);
+    box-sizing: border-box;
+}
+
+.Principal {
+    display: flex;
+    align-items: center;
+    padding: 6% 10%;
+    justify-content: space-between;
+    gap: 82px;
+
+
+}
+
+.Principal__contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Titulo-destacar {
+    color: var(--color-titulo);
+
+}
+
+
+.Principal__contenido_titulo {
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona-one);
+
+}
+
+
+.Principal__contenido_parrafo {
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.Principal__ligas {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fuente-montserrat);
+    gap: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: double;
+    color: var(--color-background);
+
+}
+
+.Principal_ligas_subtitulo {
+    font-family: var(--fuente-krona-one);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-texto);
+}
+
+
+
+.Principal__contenido__links {
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-family: var(--fuente-montserrat);
+    border: 2px solid var(--color-titulo);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Principal__contenido__links:hover{
+    background-color: var(--color-background);
+
+}
+
+.presentacion__imagen {
+    width: 50%;
+}
+
+.footer__parrafo {
+    background-color: var(--color-titulo);
+    padding: 1.5rem;
+    color: var(--color-background);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+    font-weight: 400;
+}
+
+@media (max-width:900px ) {
+    .header__menu {
+        justify-content: center;
+    }
+
+    .header {
+        padding: 10%;
+    }
+
+    .Principal {
+        flex-direction: column-reverse;
+    }       
+
+    .Principal__contenido {
+        width: 100%;
+        ;
+    }
+
+}
+
+@media (max-width:400px ) {
+    .header__menu {
+        justify-content: center;
+    }
+
+    .header {
+        padding: 10%;
+    }
+
+    .Principal {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }       
+
+    .Principal__contenido {
+        width: auto;
+        ;
+    }
+
+}
+
+
+
+
